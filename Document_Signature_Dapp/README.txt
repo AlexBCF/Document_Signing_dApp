@@ -1,0 +1,1 @@
+This is a simple Document signing dapp, which allows user to sign the proposed document, add addresses to a whitelist, and check if the address did sign the document. Only addresses from the whitelist can sign the document.
