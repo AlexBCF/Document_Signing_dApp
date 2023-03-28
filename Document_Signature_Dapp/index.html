@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>doc_sign</title>
+     <link rel="stylesheet" href="style.css"/>
+     <script 
+        src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"
+     ></script>
+
+     <script src="script.js"></script>
+ </head>
+ <body>
+     <h1>Document Signing</h1>
+     <p>You can add adresses to the Whitelist </p></p>
+     <input type="text" id="address_1" />
+     <button onclick = "add_to_whitelist()">Add to Whitelist</button>
+     <p>If the you are in the Whitelist, you can sign the document</p>
+     <button onclick = "sign()">Sign The Document</button>
+     <p>You can check if the Document is signed by any particular address</p>
+     <br /> 
+     <input type="text" id="address_2" />
+  <br>
+     <button onclick = "check_if_signed()">Check if Signed</button> 
+     <p>This address has signed the Document: <span id="result"></span></p>
+ </body>
+</html>
